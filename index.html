@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Preferred+Font&display=swap">
+</head>
+<body>
+  <div class="container">
+    <h1>Hotel Booking Registration Form</h1>
+    <form id="booking-form">
+      <div class="form-group">
+        <label for="customer-name">Customer Name *</label>
+        <input type="text" id="customer-name" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="checkin-date">Check-in Date *</label>
+        <input type="date" id="checkin-date" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="num-days">Total No of Days *</label>
+        <input type="number" id="num-days" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="num-persons">Total No of Persons *</label>
+        <input type="number" id="num-persons" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="room-type">Room Type</label>
+        <select id="room-type" class="form-control">
+          <option value="">Select Room Type</option>
+          <option value="Delux">Delux Room</option>
+          <option value="Suite">Suite Room</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Amenities</label>
+        <input type="checkbox" id="amenities-ac"> AC
+        <input type="checkbox" id="amenities-locker"> Locker
+      </div>
+
+      <div class="form-group">
+        <label for="advance-payment">Advance Amount *</label>
+        <input type="number" id="advance-payment" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label>Upto 2 People: No Change in Cost</label><br>
+        <label>Per Day Cost for Extra Person: 1000/-</label>
+      </div>
+
+      <div class="form-group">
+        <label for="balance-amount">Balance</label>
+        <input type="text" id="balance-amount" class="form-control" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Total Room Cost</label>
+        <input type="text" id="total-room-cost" class="form-control" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Total Amenities Cost</label>
+        <input type="text" id="total-amenities-cost" class="form-control" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Total Cost</label>
+        <input type="text" id="total-cost" class="form-control" readonly>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Calculate Total</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

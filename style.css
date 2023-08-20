@@ -1,0 +1,107 @@
+/* Reset default margin and padding */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('hotel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e6e6e6; /* Updated background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+     font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Checkbox label style */
+.form-group label:not(.checkbox-label) {
+    font-weight: normal;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for specific elements */
+#balance-amount,
+#total-room-cost,
+#total-amenities-cost,
+#total-cost {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Summary section styles */
+.summary {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.summary h2 {
+    margin-top: 0;
+    color: #333333fe;
+}
+
+.summary p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.summary span {
+    font-weight: bold;
+    color: #007bff;
+}
